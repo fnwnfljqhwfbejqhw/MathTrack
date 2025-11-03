@@ -1,0 +1,5 @@
+{
+  "name": "Math Racer: Endless Runner",
+  "description": "A top-down 2D endless runner game where you control a car on a three-lane highway. Solve simple arithmetic problems by driving into the lane with the correct answer to score points.",
+  "requestFramePermissions": []
+}
