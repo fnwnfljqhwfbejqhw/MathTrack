@@ -25,8 +25,10 @@ const Game: React.FC<GameProps> = ({ onGameOver }) => {
   const [showAnswers, setShowAnswers] = useState(false);
   const [feedback, setFeedback] = useState<'correct' | 'incorrect' | null>(null);
 
-  const animationFrameId = useRef<number>();
-  const answerTimerId = useRef<number>();
+  // FIX: Provide an initial `null` value to `useRef` and update the type accordingly.
+  const animationFrameId = useRef<number | null>(null);
+  // FIX: Provide an initial `null` value to `useRef` and update the type accordingly.
+  const answerTimerId = useRef<number | null>(null);
 
   const setupNewProblem = useCallback(() => {
     const newProblem = generateProblem();
